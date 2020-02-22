@@ -24,6 +24,30 @@ public class Recursion {
 
     /**
         * 
+        * <p><strong><em>DESCRIPTION: </em></strong>return the number of digits in a number</p>
+        * 
+        * <p><strong><em>METHOD NAME: </em></strong>DigitCount</p>
+        *
+        * <p><strong><em>METHOD NOTES: </em></strong></p>
+        *
+        * <p><strong><em>PRE-CONDITION: </em></strong>none</p>
+        *
+        * <p><strong><em>POST-CONDITION: </em></strong>none</p>
+        *
+        * <p><strong><em>AUTHOR: </em></strong> Daniel C. Landon Jr.</p>
+        * <p><strong><em>DATE STARTED: </em></strong>02.22.2020</p>
+        *
+        * @param N number to count the digits
+        * @return how many digitis are in a number
+     */
+    public int DigitCount(int N) {
+
+        return String.valueOf(N).length();
+
+    } // end DigitCount
+
+    /**
+        * 
         * <p><strong><em>DESCRIPTION: </em></strong>finds the sum of a positive number by adding all of the other values of the number supplied to the last digit of the number</p>
         * 
         * <p><strong><em>METHOD NAME: </em></strong>sumOfDigits</p>
@@ -42,23 +66,7 @@ public class Recursion {
      */
     public int sumOfDigits(int N) {
 
-        // variables 
-        int _answer = 0;
-        
-        if( String.valueOf(N).length() == 1) {
-
-            // number is one digit in size so return it
-
-            _answer = N;
-
-        }  // end if
-        else {
-
-            // TODO: NOT WORKING !!!!!!
-
-        } // end else
-
-        return _answer;
+        return (String.valueOf(N).length() == 1) ? N : (N % 10 + sumOfDigits(N / 10));
 
     } // end sumOfDigits
 

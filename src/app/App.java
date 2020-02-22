@@ -58,6 +58,32 @@ public class App {
         System.out.println("\n********** Fibonacci(" + _fibonacci + ") **********");
         System.out.println("Final Number of the Fibonacci Sequence Is: " + _recursion.Fibonacci(_fibonacci));
         System.out.println("********** Fibonacci(" + _fibonacci + ") **********");
+
+        System.out.println("\n********** sumOfDigits **********");
+        int _digitSum = 0;
+        System.out.println("sumOfDigits (" + _digitSum +  "): " + _recursion.sumOfDigits(_digitSum));
+        _digitSum = 101;
+        System.out.println("sumOfDigits (" + _digitSum +  "): " + _recursion.sumOfDigits(_digitSum));
+        _digitSum = 1;
+        System.out.println("sumOfDigits (" + _digitSum +  "): " + _recursion.sumOfDigits(_digitSum));
+        _digitSum = 231214;
+        System.out.println("sumOfDigits (" + _digitSum +  "): " + _recursion.sumOfDigits(_digitSum));
+        _digitSum = 734;
+        System.out.println("sumOfDigits (" + _digitSum +  "): " + _recursion.sumOfDigits(_digitSum));
+        System.out.println("********** sumOfDigits **********");
+
+        System.out.println("\n********** DigitCount **********");
+        int _digitCount = 0;
+        System.out.println("Number of digits found (" + _digitCount +  "): " + _recursion.DigitCount(_digitCount));
+        _digitCount = 101;
+        System.out.println("Number of digits found (" + _digitCount +  "): " + _recursion.DigitCount(_digitCount));
+        _digitCount = 1;
+        System.out.println("Number of digits found (" + _digitCount +  "): " + _recursion.DigitCount(_digitCount));
+        _digitCount = 231214;
+        System.out.println("Number of digits found (" + _digitCount +  "): " + _recursion.DigitCount(_digitCount));
+        _digitCount = 734;
+        System.out.println("Number of digits found (" + _digitCount +  "): " + _recursion.DigitCount(_digitCount));
+        System.out.println("********** DigitCount **********");
     
     } // end main
 
