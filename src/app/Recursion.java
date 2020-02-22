@@ -24,6 +24,79 @@ public class Recursion {
 
     /**
         * 
+        * <p><strong><em>DESCRIPTION: </em></strong>finds the sum of a positive number by adding all of the other values of the number supplied to the last digit of the number</p>
+        * 
+        * <p><strong><em>METHOD NAME: </em></strong>DigitSum</p>
+        *
+        * <p><strong><em>METHOD NOTES: </em></strong>none</p>
+        *
+        * <p><strong><em>PRE-CONDITION: </em></strong>PRE-CONDITION</p>
+        *
+        * <p><strong><em>POST-CONDITION: </em></strong>successful</p>
+        *
+        * <p><strong><em>AUTHOR: </em></strong> Daniel C. Landon Jr.</p>
+        * <p><strong><em>DATE STARTED: </em></strong>02.22.2020</p>
+        *
+        * @param N number to process
+        * @return recursive value
+     */
+    public int DigitSum(int N) {
+
+        // variables 
+        int _answer = 0;
+
+
+
+        return _answer;
+
+    } // end DigitSum
+
+    /**
+        * 
+        * <p><strong><em>DESCRIPTION: </em></strong>generates Fibonacci sequence</p>
+        * 
+        * <p><strong><em>METHOD NAME: </em></strong>Fibonacci</p>
+        *
+        * <p><strong><em>METHOD NOTES: </em></strong>none</p>
+        *
+        * <p><strong><em>PRE-CONDITION: </em></strong>none</p>
+        *
+        * <p><strong><em>POST-CONDITION: </em></strong>generated fibonacci sequence</p>
+        *
+        * <p><strong><em>AUTHOR: </em></strong> Daniel C. Landon Jr.</p>
+        * <p><strong><em>DATE STARTED: </em></strong>02.22.2020</p>
+        *
+        * @param N where to start sequence
+        * @return recursive value
+     */
+    public int Fibonacci(int N) {
+
+        // // variables
+        int _answer = 0;
+
+        if ( N < 2 ) {
+
+            _answer = N;
+
+        } // end if
+
+        else {
+
+            // recursion
+
+            _answer = Fibonacci(N - 1) + Fibonacci(N - 2);
+
+            System.out.printf("Calling Fibonacci(%d) ... Fibonacci(%d - 1) + Fibonacci(%d - 2) ... %d\n", 
+                N, N, N, _answer );
+
+        } // end else
+
+        return _answer;
+
+    } // end Fibonacci
+
+    /**
+        * 
         * <p><strong><em>DESCRIPTION: </em></strong>takes a base number plus an exponent and returns the value</p>
         * 
         * <p><strong><em>METHOD NAME: </em></strong>Power</p>

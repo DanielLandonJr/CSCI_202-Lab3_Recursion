@@ -40,6 +40,7 @@ public class App {
         * @throws Exception error trapping
      */
     public static void main(String[] args) throws Exception {
+
         Recursion _recursion = new Recursion();
 
         int _factoral = 8;
@@ -52,5 +53,12 @@ public class App {
         System.out.println("\n********** Power(" + _powerBase + ", " + +powerExp + ") **********");
         _recursion.Power(_powerBase, powerExp);
         System.out.println("********** Power(" + _powerBase + ", " + +powerExp + ") **********");
-    }
-}
+
+        int _fibonacci = 7;
+        System.out.println("\n********** Fibonacci(" + _fibonacci + ") **********");
+        System.out.println("Final Number of the Fibonacci Sequence Is: " + _recursion.Fibonacci(_fibonacci));
+        System.out.println("********** Fibonacci(" + _fibonacci + ") **********");
+    
+    } // end main
+
+} // end App
