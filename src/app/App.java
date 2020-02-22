@@ -40,6 +40,10 @@ public class App {
         * @throws Exception error trapping
      */
     public static void main(String[] args) throws Exception {
-        System.out.println("Hello Java");
+        Recursion _recursion = new Recursion();
+
+        System.out.println("\n********** Factoral **********");
+        _recursion.Factoral(8);
+        System.out.println("********** Factoral **********");
     }
 }
