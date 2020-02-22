@@ -1,36 +1,38 @@
 
 
 /**
-   * <strong><em>Application Name: </em></strong>
-   * <strong><em>Class Name: </em></strong>
-   *  
-   * <strong><em>Author: </em></strong> Daniel C. Landon Jr.
-   * <strong><em>Instructor: </em></strong>Dr. Bob Walsh
-   * <strong><em>Course: </em></strong>CSCI 202 - Introduction to Software Systems
-   * <strong><em>Date Started: </em></strong>02.22.2020
-   * <strong><em>Date Due: </em></strong>02.20.2020
-   * 
-   * <strong><em>Class Notes: </em></strong>
-   *
-   * <strong><em>Pre-Condition: </em></strong>
-   *
-   * <strong><em>Post-Condition: </em></strong>
-   * 
+    * <p><strong><em>DESCRIPTION: </em></strong>DESCRIPTION</p>
+    *
+    * <p><strong><em>APPLICATION NAME: </em></strong>APPLICATION NAME</p>
+    *
+    * <p><strong><em>CLASS NAME: </em></strong>CLASS NAME</p>
+    *
+    * <p><strong><em>CLASS NOTES: </em></strong>CLASS NOTES</p>
+    *
+    * <p><strong><em>PRE-CONDITION: </em></strong>PRE-CONDITION</p>
+    *
+    * <p><strong><em>POST-CONDITION: </em></strong>POST-CONDITION</p>
+    *
+    * <p><strong><em>AUTHOR: </em></strong>Daniel C. Landon Jr.</p>
+    * <p><strong><em>INSTRUCTOR: </em></strong>Dr. Bob Walsh</p>
+    * <p><strong><em>COURSE: </em></strong>CSCI 202 - Introduction to Software Systems</p>
+    * <p><strong><em>DATE STARTED: </em></strong>DATE STARTED</p>
+    * <p><strong><em>DATE DUE: </em></strong>DATE DUE</p>
+    * 
 */
-
-
- 
-/**
-   * 
-   * <strong><em>Method Name: </em></strong>
-   * 
-   * <strong><em>Author: </em></strong>Daniel C. Landon Jr
-   * <strong><em>Date Started: </em></strong>02.22.2020
-   *
-   * <strong><em>Method Notes: </em></strong>
-   *
-   * <strong><em>Pre-Condition: </em></strong>
-   *
-   * <strong><em>Post-Condition: </em></strong>
-   * 
-*/
+    /**
+        * 
+        * <p><strong><em>DESCRIPTION: </em></strong>DESCRIPTION</p>
+        * 
+        * <p><strong><em>METHOD NAME: </em></strong>METHOD NAME</p>
+        *
+        * <p><strong><em>METHOD NOTES: </em></strong>METHOD NOTES</p>
+        *
+        * <p><strong><em>PRE-CONDITION: </em></strong>PRE-CONDITION</p>
+        *
+        * <p><strong><em>POST-CONDITION: </em></strong>POST-CONDITION</p>
+        *
+        * <p><strong><em>AUTHOR: </em></strong> Daniel C. Landon Jr.</p>
+        * <p><strong><em>DATE STARTED: </em></strong>DATE STARTED</p>
+        *
+     */
