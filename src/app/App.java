@@ -42,8 +42,15 @@ public class App {
     public static void main(String[] args) throws Exception {
         Recursion _recursion = new Recursion();
 
-        System.out.println("\n********** Factoral **********");
-        _recursion.Factoral(8);
-        System.out.println("********** Factoral **********");
+        int _factoral = 8;
+        System.out.println("\n********** Factoral(" + _factoral + ") **********");
+        _recursion.Factoral(_factoral);
+        System.out.println("********** Factoral(" + _factoral + ") **********");
+
+        int _powerBase = 2;
+        int powerExp = 10;
+        System.out.println("\n********** Power(" + _powerBase + ", " + +powerExp + ") **********");
+        _recursion.Power(_powerBase, powerExp);
+        System.out.println("********** Power(" + _powerBase + ", " + +powerExp + ") **********");
     }
 }
