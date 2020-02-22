@@ -26,7 +26,7 @@ public class Recursion {
         * 
         * <p><strong><em>DESCRIPTION: </em></strong>finds the sum of a positive number by adding all of the other values of the number supplied to the last digit of the number</p>
         * 
-        * <p><strong><em>METHOD NAME: </em></strong>DigitSum</p>
+        * <p><strong><em>METHOD NAME: </em></strong>sumOfDigits</p>
         *
         * <p><strong><em>METHOD NOTES: </em></strong>none</p>
         *
@@ -40,16 +40,27 @@ public class Recursion {
         * @param N number to process
         * @return recursive value
      */
-    public int DigitSum(int N) {
+    public int sumOfDigits(int N) {
 
         // variables 
         int _answer = 0;
+        
+        if( String.valueOf(N).length() == 1) {
 
+            // number is one digit in size so return it
 
+            _answer = N;
+
+        }  // end if
+        else {
+
+            // TODO: NOT WORKING !!!!!!
+
+        } // end else
 
         return _answer;
 
-    } // end DigitSum
+    } // end sumOfDigits
 
     /**
         * 
