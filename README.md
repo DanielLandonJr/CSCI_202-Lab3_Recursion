@@ -5,10 +5,10 @@ This is a list of 9 recursive methods to write and test.
 Lab 3 - Recursion
 Implement and test the following static recursive methods. Test several examples. We have already done several so be sure to document.
 
-1. Factorial
-2. Power
-3. Fibonacci
-4. DigitSum (Find the sum of digits of a positive integer number)
+## Factorial
+## Power
+## Fibonacci
+## DigitSum (Find the sum of digits of a positive integer number)
 
 Sum = number itself if (number is a single digit)
 
@@ -18,14 +18,18 @@ public int sumOfDigits(int number)
 
 Test this method with following input numbers: 0, 101, 1, 231214, 734
 
-5. DigitCount – find the sum of the digits in an integer digitCount(12345) would be 5
-6. Power2 - Efficiently compute exponentiation for non-negative exponents by the following recursive algorithm:
+## DigitCount – find the sum of the digits in an integer digitCount(12345) would be 5
+## Power2 - Efficiently compute exponentiation for non-negative exponents by the following recursive algorithm:
 
+```
 bx = 1 if x == 0
+```
 
+```
 bx = (b(x/2))2  if x is even bx = b * (b(x-1)) if x is odd
+```
 
-7. Write the recursive method and help method to count the uppercase letters in a string.
+## Write the recursive method and help method to count the uppercase letters in a string.
  
 ```
 public static int countUppercase(String str) {
@@ -63,8 +67,8 @@ public static int countUppercase(String str) {
   }//upper 
 ```
 
-8. Write the similar countLowercase methods
-9. Write the similar countDigits methods 
+## Write the similar countLowercase methods
+## Write the similar countDigits methods 
 
 Test with this string: 
 
