@@ -20,7 +20,135 @@ package app;
     * <p><strong><em>DATE DUE: </em></strong>02.20.2020</p>
     * 
 */
-public class Recursion {
+public class Recursion {    
+    
+    /**
+        * 
+        * <p><strong><em>DESCRIPTION: </em></strong>takes a sentence and counts the number of lowercase letters</p>
+        * 
+        * <p><strong><em>METHOD NAME: </em></strong>countLowerCase</p>
+        *
+        * <p><strong><em>METHOD NOTES: </em></strong>CODE SUPPLIED BY PROFESSOR</p>
+        *
+        * <p><strong><em>PRE-CONDITION: </em></strong>a sentence</p>
+        *
+        * <p><strong><em>POST-CONDITION: </em></strong>returns number of upper case letters</p>
+        *
+        * <p><strong><em>AUTHOR: </em></strong> Daniel C. Landon Jr.</p>
+        * <p><strong><em>DATE STARTED: </em></strong>02.22.2020</p>
+        *
+        * @param _sentence sentence to review
+        * @return number of lowercase letters
+     */
+    public int countLowerCase(String _sentence) {
+        
+        // call the helper class
+        return countLowerCase(_sentence, _sentence.length() - 1);
+
+    } // end countLowerCase
+
+    
+    /**
+        * 
+        * <p><strong><em>DESCRIPTION: </em></strong>takes a sentence and counts the number of lowercase letters</p>
+        * 
+        * <p><strong><em>METHOD NAME: </em></strong>countLowerCase</p>
+        *
+        * <p><strong><em>METHOD NOTES: </em></strong>HELPER METHOD, CODE SUPPLIED BY PROFESSOR</p>
+        *
+        * <p><strong><em>PRE-CONDITION: </em></strong>a sentence</p>
+        *
+        * <p><strong><em>POST-CONDITION: </em></strong>returns number of upper case letters</p>
+        *
+        * <p><strong><em>AUTHOR: </em></strong> Daniel C. Landon Jr.</p>
+        * <p><strong><em>DATE STARTED: </em></strong>02.22.2020</p>
+        *
+        * @param str sentence to review
+        * @param high the max length of the sentence
+        * @return number of lowercase letters
+     */
+    public int countLowerCase(String str, int high) {
+
+        System.out.println("countLowerCase(" + str + ", " + high + ")"); 
+    
+        int count =0;
+    
+        if (high >= 0){
+
+            if (Character.isLowerCase(str.charAt(high))) { count = 1; } // end if
+            else { count =0; }    
+            
+            return this.countLowerCase(str, high - 1) + count;
+    
+        } // high
+        
+        else { return 0; } // end else
+
+    } // end countLowerCase
+
+    /**
+        * 
+        * <p><strong><em>DESCRIPTION: </em></strong>takes a sentence and counts the number of uppercase letters</p>
+        * 
+        * <p><strong><em>METHOD NAME: </em></strong>countUpperCase</p>
+        *
+        * <p><strong><em>METHOD NOTES: </em></strong>CODE SUPPLIED BY PROFESSOR</p>
+        *
+        * <p><strong><em>PRE-CONDITION: </em></strong>a sentence</p>
+        *
+        * <p><strong><em>POST-CONDITION: </em></strong>returns number of upper case letters</p>
+        *
+        * <p><strong><em>AUTHOR: </em></strong> Daniel C. Landon Jr.</p>
+        * <p><strong><em>DATE STARTED: </em></strong>02.22.2020</p>
+        *
+        * @param _sentence sentence to review
+        * @return number of uppercase letters
+     */
+    public int countUpperCase(String _sentence) {
+        
+        // call the helper class
+        return countUpperCase(_sentence, _sentence.length() - 1);
+
+    } // end countUpperCase
+
+    
+    /**
+        * 
+        * <p><strong><em>DESCRIPTION: </em></strong>takes a sentence and counts the number of uppercase letters</p>
+        * 
+        * <p><strong><em>METHOD NAME: </em></strong>countUpperCase</p>
+        *
+        * <p><strong><em>METHOD NOTES: </em></strong>HELPER METHOD, CODE SUPPLIED BY PROFESSOR</p>
+        *
+        * <p><strong><em>PRE-CONDITION: </em></strong>a sentence</p>
+        *
+        * <p><strong><em>POST-CONDITION: </em></strong>returns number of upper case letters</p>
+        *
+        * <p><strong><em>AUTHOR: </em></strong> Daniel C. Landon Jr.</p>
+        * <p><strong><em>DATE STARTED: </em></strong>02.22.2020</p>
+        *
+        * @param str sentence to review
+        * @param high the max length of the sentence
+        * @return number of uppercase letters
+     */
+    public int countUpperCase(String str, int high) {
+
+        System.out.println("countUppercase(" + str + ", " + high + ")"); 
+    
+        int count =0;
+    
+        if (high >= 0){
+
+            if (Character.isUpperCase(str.charAt(high))) { count = 1; } // end if
+            else { count =0; }    
+            
+            return this.countUpperCase(str, high - 1) + count;
+    
+        } // high
+        
+        else { return 0; } // end else
+
+    } // end countUpperCase
 
     /**
         * 

@@ -41,7 +41,9 @@ public class App {
      */
     public static void main(String[] args) throws Exception {
 
+        // variables
         Recursion _recursion = new Recursion();
+        String _sentence = "We must be Ready in C202 for Exam 1 which Will be in 2 weeks";
 
         int _factoral = 8;
         System.out.println("\n********** Factoral(" + _factoral + ") **********");
@@ -84,6 +86,18 @@ public class App {
         _digitCount = 734;
         System.out.println("Number of digits found (" + _digitCount +  "): " + _recursion.DigitCount(_digitCount));
         System.out.println("********** DigitCount **********");
+
+        
+        System.out.println("\n********** countUpperCase **********");
+        System.out.println("\nNumber of Upper Case Letters Found: " + _recursion.countUpperCase(_sentence));
+        System.out.println("********** countUpperCase **********");
+
+        System.out.println("\n********** countLowerCase **********");
+        System.out.println("\nNumber of Lower Case Letters Found: " + _recursion.countLowerCase(_sentence));
+        System.out.println("********** countLowerCase **********");
+
+        System.out.println("\n********** countDigits **********");
+        System.out.println("********** countDigits **********");
     
     } // end main
 
