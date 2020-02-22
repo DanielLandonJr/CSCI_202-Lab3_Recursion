@@ -20,7 +20,89 @@ package app;
     * <p><strong><em>DATE DUE: </em></strong>02.20.2020</p>
     * 
 */
-public class Recursion {    
+public class Recursion {
+
+    
+    
+    /**
+        * 
+        * <p><strong><em>DESCRIPTION: </em></strong>takes a sentence and counts the number of digits</p>
+        * 
+        * <p><strong><em>METHOD NAME: </em></strong>countDigits</p>
+        *
+        * <p><strong><em>METHOD NOTES: </em></strong></p>
+        *
+        * <p><strong><em>PRE-CONDITION: </em></strong>a sentence</p>
+        *
+        * <p><strong><em>POST-CONDITION: </em></strong>returns number of digits</p>
+        *
+        * <p><strong><em>AUTHOR: </em></strong> Daniel C. Landon Jr.</p>
+        * <p><strong><em>DATE STARTED: </em></strong>02.22.2020</p>
+        *
+        * @param _sentence sentence to review
+        * @return number of digits
+     */
+    public int countDigits(String _sentence) {
+        
+        // call the helper class
+        return countDigits(_sentence, _sentence.length() - 1);
+
+    } // end countDigits
+
+    /**
+        * 
+        * <p><strong><em>DESCRIPTION: </em></strong>takes a sentence and counts the number of digits</p>
+        * 
+        * <p><strong><em>METHOD NAME: </em></strong>countDigits</p>
+        *
+        * <p><strong><em>METHOD NOTES: </em></strong>HELPER METHOD</p>
+        *
+        * <p><strong><em>PRE-CONDITION: </em></strong>a sentence</p>
+        *
+        * <p><strong><em>POST-CONDITION: </em></strong>returns number of digits</p>
+        *
+        * <p><strong><em>AUTHOR: </em></strong> Daniel C. Landon Jr.</p>
+        * <p><strong><em>DATE STARTED: </em></strong>02.22.2020</p>
+        *
+        * @param str sentence to review
+        * @param high the max length of the sentence
+        * @return number of digits
+     */
+    public int countDigits(String str, int high) {
+
+        System.out.println("countDigits(" + str + ", " + high + ")"); 
+    
+        int count = 0;
+    
+        if (high >= 0){
+
+            if (Character.isDigit(str.charAt(high))) { count = 1; } // end if
+            else { count = 0; }    
+            
+            return this.countDigits(str, high - 1) + count;
+    
+        } // high
+        
+        else { return 0; } // end else
+
+    } // end countDigits
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     /**
         * 
@@ -28,11 +110,11 @@ public class Recursion {
         * 
         * <p><strong><em>METHOD NAME: </em></strong>countLowerCase</p>
         *
-        * <p><strong><em>METHOD NOTES: </em></strong>CODE SUPPLIED BY PROFESSOR</p>
+        * <p><strong><em>METHOD NOTES: </em></strong></p>
         *
         * <p><strong><em>PRE-CONDITION: </em></strong>a sentence</p>
         *
-        * <p><strong><em>POST-CONDITION: </em></strong>returns number of upper case letters</p>
+        * <p><strong><em>POST-CONDITION: </em></strong>returns number of lower case letters</p>
         *
         * <p><strong><em>AUTHOR: </em></strong> Daniel C. Landon Jr.</p>
         * <p><strong><em>DATE STARTED: </em></strong>02.22.2020</p>
@@ -47,18 +129,17 @@ public class Recursion {
 
     } // end countLowerCase
 
-    
     /**
         * 
         * <p><strong><em>DESCRIPTION: </em></strong>takes a sentence and counts the number of lowercase letters</p>
         * 
         * <p><strong><em>METHOD NAME: </em></strong>countLowerCase</p>
         *
-        * <p><strong><em>METHOD NOTES: </em></strong>HELPER METHOD, CODE SUPPLIED BY PROFESSOR</p>
+        * <p><strong><em>METHOD NOTES: </em></strong>HELPER METHOD</p>
         *
         * <p><strong><em>PRE-CONDITION: </em></strong>a sentence</p>
         *
-        * <p><strong><em>POST-CONDITION: </em></strong>returns number of upper case letters</p>
+        * <p><strong><em>POST-CONDITION: </em></strong>returns number of lower case letters</p>
         *
         * <p><strong><em>AUTHOR: </em></strong> Daniel C. Landon Jr.</p>
         * <p><strong><em>DATE STARTED: </em></strong>02.22.2020</p>
@@ -71,12 +152,12 @@ public class Recursion {
 
         System.out.println("countLowerCase(" + str + ", " + high + ")"); 
     
-        int count =0;
+        int count = 0;
     
         if (high >= 0){
 
             if (Character.isLowerCase(str.charAt(high))) { count = 1; } // end if
-            else { count =0; }    
+            else { count = 0; }    
             
             return this.countLowerCase(str, high - 1) + count;
     

@@ -97,6 +97,7 @@ public class App {
         System.out.println("********** countLowerCase **********");
 
         System.out.println("\n********** countDigits **********");
+        System.out.println("\nNumber of Digits Found: " + _recursion.countDigits(_sentence));
         System.out.println("********** countDigits **********");
     
     } // end main
